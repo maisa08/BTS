@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #b89adb;
+    --laranja-claro: #7500fa;
 }
 
 body {
@@ -78,8 +78,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/') top right no-repeat,
-        url('img/') bottom left no-repeat;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -98,11 +98,11 @@ h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
     font-style: normal;
-    color: #7500fa;
+    color: var(--laranja-claro);
 }
 
 #galeria {
-    background-color: #b79ed4;
+    background-color: #7500fa;
 
 }
 
@@ -112,7 +112,7 @@ h2 {
 }
 
 #contato {
-    background-image: url('img/Pink\ Feminine\ Beauty\ Company\ Zoom\ Virtual\ Background.png');
+    background-image: url('img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -138,9 +138,8 @@ h2 {
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #b69dd2;
+    background-color: #7500fa;
 }
-
 .menu-acessibilidade{
     position: fixed;
     top: 2rem;
@@ -148,10 +147,12 @@ h2 {
     z-index: 1000;
 }
 
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
 }
+
 
 .opcoes-acessibilidade{
     margin-top: 10px;
@@ -159,10 +160,53 @@ h2 {
     flex-direction: column;
 }
 
+
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
 }
 
+
 .apresenta-lista{
     display: none;
 }
+
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+
